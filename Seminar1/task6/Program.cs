@@ -3,15 +3,15 @@
 using System;
 
 Console.WriteLine("Введите число:");
-string? numberStringOne = Console.ReadLine();
+string? numberString = Console.ReadLine();
 
-int numberIntOne = Convert.ToInt32(numberStringOne);
+int number = Convert.ToInt32(numberString);
 
-if (numberIntOne % 2 == 0)
+if (number % 2 == 0)
 {
-    Console.WriteLine(numberIntOne + " чётное число.");
+    Console.WriteLine(number + " чётное число.");
 }
 else
 {
-    Console.WriteLine(numberIntOne + " нечётное число.");
+    Console.WriteLine(number + " нечётное число.");
 }

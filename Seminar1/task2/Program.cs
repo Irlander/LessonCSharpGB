@@ -13,9 +13,9 @@ int numberIntTwo = Convert.ToInt32(numberStringTwo);
 
 if (numberIntOne >= numberIntTwo)
 {
-    Console.WriteLine("Max = "+ numberIntOne);
+    Console.WriteLine("Максимальное число "+ numberIntOne);
 }
 else
 {
-    Console.WriteLine("Max = "+ numberIntTwo);
+    Console.WriteLine("Максимальное число "+ numberIntTwo);
 }

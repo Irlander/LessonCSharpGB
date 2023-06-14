@@ -11,18 +11,18 @@ string? numberStringTwo = Console.ReadLine();
 Console.WriteLine("Введите третье число:");
 string? numberStringThree = Console.ReadLine();
 
-int numberIntOne = Convert.ToInt32(numberStringOne);
-int numberIntTwo = Convert.ToInt32(numberStringTwo);
-int numberIntThree = Convert.ToInt32(numberStringThree);
+int numberOne = Convert.ToInt32(numberStringOne);
+int numberTwo = Convert.ToInt32(numberStringTwo);
+int numberThree = Convert.ToInt32(numberStringThree);
 
-if (numberIntOne >= numberIntTwo)
+if (numberOne >= numberTwo)
 {
-    numberIntTwo = numberIntOne;
+    numberTwo = numberOne;
 }
 
-if (numberIntTwo >= numberIntThree)
+if (numberTwo >= numberThree)
 {
-    numberIntThree = numberIntTwo;
+    numberThree = numberTwo;
 }
 
- Console.WriteLine("Max = "+ numberIntThree);
+ Console.WriteLine("Максимальное число равно "+ numberThree);
