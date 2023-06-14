@@ -2,16 +2,17 @@
 
 using System;
 
-Console.WriteLine("Введите число:");
-string? numberStringOne = Console.ReadLine();
+Console.WriteLine("Введите положительное число:");
+int number = Convert.ToInt32(Console.ReadLine());
 
-int numberIntOne = Convert.ToInt32(numberStringOne);
-
-if (numberIntOne % 2 == 0)
+if (number > 1)
 {
-    Console.WriteLine(numberIntOne + " чётное число.");
+    for (int count = 2; count <= number; count = count + 2)
+    {
+        Console.Write(count);
+    }
 }
 else
 {
-    Console.WriteLine(numberIntOne + " нечётное число.");
+    Console.WriteLine("Введено число, которое не удовлетворяет требования");
 }
