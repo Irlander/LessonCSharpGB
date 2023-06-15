@@ -2,15 +2,15 @@
 
 Console.WriteLine("Введите номер дня недели");
 int day = Convert.ToInt32(Console.ReadLine());
-if (day > 7)
+if (day > 7) //проверка что день недели не больше 7
 {
-    Console.WriteLine("Такого дня недели не существует");
+    Console.WriteLine("Это не выходной день. Такого дня недели не существует");
 }
-else if (day == 6 || day == 7)
+else if (day == 6 || day == 7) //проверка субботы и воскресенья
 {
     Console.WriteLine("Выходной день");
 }
-else if (day < 6)
+else if (day < 6) //проверка на будни
 {
-    Console.WriteLine("Будний день");
+    Console.WriteLine("Это не выходной день, а будний");
 }

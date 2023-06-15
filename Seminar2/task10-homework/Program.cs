@@ -1,14 +1,14 @@
 ﻿// Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
 
 Console.WriteLine("Введите трёхзначное число");
-int number = Convert.ToInt32(Console.ReadLine());
-if (100 <= number && number <= 999)
+int number = Convert.ToInt32(Console.ReadLine()); //Ввод и преобразование в int
+if (100 <= number && number <= 999) //Проверка на трёхзначное число
 {
-    number = number / 10;
-    number = number % 10;
-    Console.WriteLine($"Вторая цифра равна {number}");
+    number = number / 10; //Отсекаем единицы
+    number = number % 10; //Отсекаем сотни
+    Console.WriteLine($"Вторая цифра равна {number}"); //Вывод числа
 }
 else
 {
-    Console.WriteLine("Ошибка ввода");
+    Console.WriteLine("Ошибка ввода"); //Вывод сообщения об исключении
 }
