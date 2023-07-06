@@ -14,15 +14,15 @@ const int COLUMNS = 2;
 int[,,] GetRandomMatrix( int block, int rows, int columns) // функция создания массива с заданными параметрами
 {
     int[,,] matrix = new int[block, rows, columns]; // создание массива с нужным количеством блоков, строк и столбцов
-    int shift = 2;
+    int value = 10;
     for(int i = 0; i < matrix.GetLength(0); i++)
     {
         for(int j = 0; j < matrix.GetLength(1); j++)
         {
             for(int k = 0; k < matrix.GetLength(2); k++)
             {
-                matrix[i, j, k] = Random.Shared.Next(1, 10) + shift; // заполнение значениями
-                shift = matrix[i, j, k];
+                matrix[i, j, k] = value + 1; // заполнение значениями
+                value = matrix[i, j, k];
             }
         }
     }
@@ -41,6 +41,7 @@ void PrintMatrix(int[,,] matrix) // функция вывода в консол�
             }
             Console.WriteLine();
         }
+        Console.WriteLine();
     }
 }
 
