@@ -45,9 +45,9 @@ void MaxToMin(int[,] matrix) //
         int temp = 0;
         for(int j = 0; j < matrix.GetLength(1); j++)
         {
-            for(int k = j + 1; j < matrix.GetLength(1); k++)
+            for(int k = j + 1; k < matrix.GetLength(1); k++)
             {
-                if (matrix[i,j] > matrix[i,k])
+                if (matrix[i,j] < matrix[i,k])
                 {
                     temp = matrix[i,j];
                     matrix[i,j] = matrix[i,k];
@@ -60,5 +60,6 @@ void MaxToMin(int[,] matrix) //
 
 int[,] myMatrix = GetRandomMatrix(ROWS, COLUMNS);
 PrintMatrix(myMatrix);
+Console.WriteLine();
 MaxToMin(myMatrix);
 PrintMatrix(myMatrix);
